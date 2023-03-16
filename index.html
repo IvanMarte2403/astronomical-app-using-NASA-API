@@ -21,7 +21,16 @@
     />
   </head>
   <body>
-  <div class="container">
+
+  <div class="container my-5">
+
+    <div id="date-picker"class="form-outline datepicker mb-4" data-mdb-format ="yyyy-mm-dd">
+
+        <input type="date" class="form-control" id="wrapper-day" data-mdb-toggle="datepicker" required-pattern ="\d{4}-\d{2}-\d{2}">
+        <label for="exampleDatepicker1" class="form-label">Selecciona una Fecha</label>
+    
+    </div>
+
     <div class="row">
         <div class="col-md-4 mb-4 mb-md-0">
             <img src="" class="w-100" alt="" id="wrapper-url">

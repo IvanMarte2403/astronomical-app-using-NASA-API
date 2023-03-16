@@ -1,4 +1,5 @@
-
+function nasaRequest(){
+    
 let xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function (){
@@ -55,11 +56,21 @@ xmlhttp.onreadystatechange = function (){
         }
     }
   }
-
+let datepicker_date = document.getElementById("wrapper-day").value;
 let queryUrl = "https://api.nasa.gov/planetary/apod?api_key=";
 let queryKey = "xv05hgzNgLdLWXKK8oT96eAhOUq2Xx7cbP87rMkn&";
-let queryDate = "date=" + "2004-05-29" + "&";
+let queryDate = "date=" + datepicker_date + "&";
 let queryFull = queryUrl + queryKey + queryDate;
 
 xmlhttp.open('GET',queryFull,true);
 xmlhttp.send();
+}
+
+const myDatepicker = document.getElementById("date-picker");
+myDatepicker.addEventListener('change',() => {
+    nasaRequest();
+    
+});     
+
+nasaRequest.onload;
+// nasaRequest();
