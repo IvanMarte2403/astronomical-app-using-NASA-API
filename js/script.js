@@ -1,7 +1,6 @@
 function nasaRequest(){
     
 let xmlhttp = new XMLHttpRequest();
-
 xmlhttp.onreadystatechange = function (){
     if(this.readyState == 4 && this.status == 200){
       let data = JSON.parse(this.responseText);
@@ -66,6 +65,7 @@ xmlhttp.open('GET',queryFull,true);
 xmlhttp.send();
 }
 
+nasaRequest();
 const myDatepicker = document.getElementById("date-picker");
 myDatepicker.addEventListener('change',() => {
     nasaRequest();

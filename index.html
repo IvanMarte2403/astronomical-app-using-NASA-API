@@ -7,34 +7,44 @@
     <title>Dev_F</title>
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
     
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+
   </head>
   <body>
+ 
+  <section class="back-img">
+    <img src="img/PolvoDeEstrellas.png" id="stars"alt="" class="img-stars">
+    <img src="img/bg-p2.png" class="img-back" alt="" id="montain-front">
+    <img src="img/bb-p.png" alt="" id="montain-back" class="img-back">
+    <h2 id="text-b">ASI CAPTO LA <br>NASA EN EL PASADO</h2>
 
-  <div class="container my-5">
-
-    <div id="date-picker"class="form-outline datepicker mb-4" data-mdb-format ="yyyy-mm-dd">
-
-        <input type="date" class="form-control" id="wrapper-day" data-mdb-toggle="datepicker" required-pattern ="\d{4}-\d{2}-\d{2}">
-        <label for="exampleDatepicker1" class="form-label">Selecciona una Fecha</label>
+    <div class="container-luna" id="luna" >
+      <div class="planet"></div>
+        <div class="satelite"></div>
+    </div>
     
+  </section>
+
+
+
+  <div class="container" id="container-api">
+    <div class="row">
+      <div class="col">
+        <div id="date-picker"class="form-outline datepicker mb-4 date-box" data-mdb-format ="yyyy-mm-dd">
+
+          <input type="date" class="form-control" id="wrapper-day" data-mdb-toggle="datepicker" required-pattern ="\d{4}-\d{2}-\d{2}">
+          <label for="exampleDatepicker1" class="form-label labelm">Selecciona una Fecha</label>
+        </div>
+      </div>
     </div>
 
     <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-            <img src="" class="w-100" alt="" id="wrapper-url">
-            <!-- <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mbd-ripple-color="light">
+        <div class="col-4">
+            <img src="" class="" alt="" id="wrapper-url">
+            
+            <!-- <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mbd-ripple-color="light"><
                 <img src="" alt="" class="w-100" id="wrapper-url">
 
                 <a href="" id="wrapper-hdurl" target="_b" >
@@ -51,18 +61,21 @@
             </section>
         </div>
 
-        <div class="col-md-4 mb-4 mb-md-0">
+        <div class="col-8">
             <h5 id="wrapper-title"></h5>
-            <p class="mb-2 text-muted"> Copyright
+            <p class="text-muted copyright"> Copyright
                 <span id="wrapper-copyright"></span>
             </p>
             <p id="wrapper-explanation"></p>
         </div>
     </div>
+
+   
+
   </div>
    
   </body>
   <script type="text/javascript" src="js/mdb.min.js"> </script>
-
+  <script src="js/parallax.js"></script>
   <script src="js/script.js "></script>
 </html>
