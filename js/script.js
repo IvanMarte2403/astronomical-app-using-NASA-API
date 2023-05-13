@@ -9,7 +9,7 @@ xmlhttp.onreadystatechange = function (){
       let explanation  = data["explanation"];
       let hdurl  = data["hdurl"];
       let media_type  = data["media_type"];
-      let title   = data["title"];
+      title   = data["title"];
       let url  = data["url"];
 
       let imageType = `
@@ -53,6 +53,7 @@ xmlhttp.onreadystatechange = function (){
             document.getElementById("wrapper-image").src = url;
             document.getElementById("wrapper-hdurl").href = hdurl;
         }
+         titleAnimation(title);
     }
   }
 let datepicker_date = document.getElementById("wrapper-day").value;
@@ -64,13 +65,13 @@ let queryFull = queryUrl + queryKey + queryDate;
 xmlhttp.open('GET',queryFull,true);
 xmlhttp.send();
 }
-
 nasaRequest();
 const myDatepicker = document.getElementById("date-picker");
 myDatepicker.addEventListener('change',() => {
     nasaRequest();
-    
+   
 });     
 
 nasaRequest.onload;
+// titleAnimation.onload;
 // nasaRequest();
