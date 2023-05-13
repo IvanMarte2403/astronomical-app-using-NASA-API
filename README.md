@@ -31,12 +31,7 @@ Only 4 documents are important in the code 💻 the other are part of a library 
 2. *style.css*
 3. *parallax.js*
 4. *script.js*
-=======
 
 
-
-
-
->>>>>>> ffcd705 (Part of the documentation)
 
 https://api.nasa.gov/
