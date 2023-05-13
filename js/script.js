@@ -1,7 +1,9 @@
 function nasaRequest(){
-    
+  // This function is used to get the data from the NASA API and run when the  element is loaded and when the date is changed.
+
 let xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function (){
+    // This function is used to get the data from the NASA API and run when the  element is loaded and when the date is changed.
     if(this.readyState == 4 && this.status == 200){
       let data = JSON.parse(this.responseText);
       let copyright  = data["copyright"];
@@ -11,6 +13,8 @@ xmlhttp.onreadystatechange = function (){
       let media_type  = data["media_type"];
       title   = data["title"];
       let url  = data["url"];
+
+      // With .innerHtml we can add the data to the HTML elements when the user change the date for this reason in the variable have the HTML code.
 
       let imageType = `
       <img src="" class="w-100" alt="" id="wrapper-image">
@@ -30,6 +34,8 @@ xmlhttp.onreadystatechange = function (){
       <iframe id="wrapper-video" src="" frameborder="0" allowfullscreen></iframe>
       </div>
       `;
+
+      // For the correct run of the need code is good see the inforomation is correct in the console
       console.log(copyright);
       console.log(date);
       console.log(explanation);
@@ -37,6 +43,8 @@ xmlhttp.onreadystatechange = function (){
       console.log(media_type);
       console.log(title);
       console.log(url);
+
+      // Read the elements by id and add the data to the HTML elements.
 
     //   document.getElementById("wrapper-url").src = url;
       document.getElementById("wrapper-title").innerHTML = title;
@@ -56,6 +64,8 @@ xmlhttp.onreadystatechange = function (){
          titleAnimation(title);
     }
   }
+
+  // Variables if the queryDate change 
 let datepicker_date = document.getElementById("wrapper-day").value;
 let queryUrl = "https://api.nasa.gov/planetary/apod?api_key=";
 let queryKey = "xv05hgzNgLdLWXKK8oT96eAhOUq2Xx7cbP87rMkn&";
@@ -66,6 +76,8 @@ xmlhttp.open('GET',queryFull,true);
 xmlhttp.send();
 }
 nasaRequest();
+
+// This part listen when the user change the date-picker and run the function nasaRequest() to run the aplication again.
 const myDatepicker = document.getElementById("date-picker");
 myDatepicker.addEventListener('change',() => {
     nasaRequest();

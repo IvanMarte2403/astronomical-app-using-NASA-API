@@ -8,12 +8,12 @@
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-
-
+  
   </head>
   <body>
- 
+<!--  
+  -------------------HEADER---------------------
+  This section include the structure for the parallax.  If you want modify the images is necessary changes de css parameters   -->
   <section class="back-img">
     <img src="img/PolvoDeEstrellas.png" id="stars"alt="" class="img-stars">
     <img src="img/bg-p2.png" class="img-back" alt="" id="montain-front">
@@ -28,20 +28,30 @@
   </section>
 
 
+<!-- ----------------------Principal Header---------------------
+Include all the app structure, if you want modfiy is necessary changes the Bootstrap Css parameters -->
+
 
   <div class="container" id="container-api">
+
     <div class="row">
+      <!-- -> The Date Picker structure  -->
       <div class="col">
+
         <div id="date-picker"class="form-outline datepicker mb-4 date-box" data-mdb-format ="yyyy-mm-dd">
 
           <input type="date" class="form-control" id="wrapper-day" data-mdb-toggle="datepicker" required-pattern ="\d{4}-\d{2}-\d{2}">
           <label for="exampleDatepicker1" class="form-label labelm">Selecciona una Fecha</label>
         </div>
+
       </div>
+
+      <!-- ------End Row------- -->
     </div>
 
     <div class="row d-flex align-content-center">
        
+        <!-- -> Title API structure  -->
         <div class="col ">
             <!-- <img src="" class="" alt="" id="wrapper-url"> -->
             
@@ -60,13 +70,19 @@
            
 
         </div>   
+      
+
+        <!-- -> Media API structure  -->
         <div class="col"> 
            
           <section id="wrapper-media" class="img-api">
 
           </section>
         </div>
+        <!-- ------End Row------- -->
+
     <div class="row">
+        <!-- -> Explanation and Text API structure  -->
         <div class="col-12">
            
             <p class="text-muted copyright"> Copyright
@@ -74,16 +90,22 @@
             </p>
             <p id="wrapper-explanation"></p>
         </div>
+        <!-- ------End Row------- -->
     </div>
+
+    <!-- -> Food Montains Decoration  -->
     <div class="row">
       <div class="col">
         <img src="img/m-1.png" class="img-back-mon" alt="">
       </div>
     </div>
+
+    <!-- -> End Row -->
     </div>
 
    
 
+    <!-- -> End Container --> 
   </div>
    
   </body>

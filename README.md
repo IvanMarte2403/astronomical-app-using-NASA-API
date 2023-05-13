@@ -18,6 +18,7 @@ the new key in this environment 🔑**queryKey** in *script.js* .
 
 ![image](https://github.com/IvanMarte2403/astronomical-app-using-NASA-API/assets/91630964/d3f9cd99-d280-4413-b49e-cd546d0fad1f)
 
+<<<<<<< HEAD
 The Astronomy Picture Day this website of nasa is on the most popular website, it has the populas appeal of a Justin Bieber video. This endpoint structures the APOD imagery and associated metadata so that it can be repurposed for other applications. In additio, if the concept_tags parameter is set to TRUE, then keyword derived from the image explanation are returned. 
 
 g## The Query Parameters 
@@ -30,5 +31,12 @@ Only 4 documents are important in the code 💻 the other are part of a library 
 2. *style.css*
 3. *parallax.js*
 4. *script.js*
+=======
+
+
+
+
+
+>>>>>>> ffcd705 (Part of the documentation)
 
 https://api.nasa.gov/
